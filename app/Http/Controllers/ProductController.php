@@ -17,7 +17,8 @@ class ProductController extends Controller
     {
         $product = new Product([
             'name' => $request->input('name'),
-            'detail' => $request->input('detail')
+            'detail' => $request->input('detail'),
+            'color' => $request->input('color')
         ]);
         $product->save();
 

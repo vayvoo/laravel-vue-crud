@@ -5,17 +5,17 @@
         <table class="table">
             <thead>
             <tr>
-                <th>ID</th>
                 <th>Nomi</th>
                 <th>Ma'lumot</th>
+                <th>Rangi</th>
                 <!-- <th>Actions</th> -->
             </tr>
             </thead>
             <tbody>
             <tr v-for="product in products" :key="product.id">
-                <td>{{ product.id }}</td>
                 <td>{{ product.name }}</td>
                 <td>{{ product.detail }}</td>
+                <td>{{ product.color }}</td>
                 <td>
                     <div class="btn-group" role="group">
                         <router-link :to="{name: 'edit', params: { id: product.id }}" class="btn btn-success" style="margin-right: 10px;">Tahrirlash</router-link>

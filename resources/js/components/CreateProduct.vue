@@ -12,6 +12,14 @@
                         <label>Ma`lumot</label>
                         <input type="text" class="form-control" v-model="product.detail">
                     </div>
+                    <div class="form-group">
+                        <label>Rangi</label>
+                        <select class="form-control" v-model="product.color">
+                            <option>Qizil</option>
+                            <option>Yashil</option>
+                            <option>Sariq</option>
+                        </select>
+                    </div>
                     <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Qo'shish</button>
                 </form>
             </div>
